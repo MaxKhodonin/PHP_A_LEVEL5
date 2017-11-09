@@ -1,0 +1,37 @@
+<?php
+
+
+$handle = fopen ("php://stdin","r"); //command line ini
+echo 'Gimmy Fiz!';
+$fiz = fgets($handle);
+
+echo 'Gimmy Buzz! ';
+$buz = fgets($handle);
+
+echo 'Gimmy Limits! ';
+$fb = fgetc($handle);
+
+
+    for($i = 1; $i <= $fb; $i++){
+          
+	if (($i%$fiz == 0) && ($i%$buz == 0)) {
+		echo "FB";
+		echo " ";
+	}
+	elseif ($i%$fiz == 0) {
+		echo "F";
+		echo " ";
+	}
+	elseif ($i%$buz == 0) {
+		echo "B";
+		echo " ";
+	}
+	else  {
+		echo $i;
+		
+	}   
+       echo " ";
+ 
+ }
+    
+echo "\n We have FizzBuzzed \n";
