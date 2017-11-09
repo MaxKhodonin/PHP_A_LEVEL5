@@ -9,7 +9,7 @@ echo 'Gimmy Buzz! ';
 $buz = fgets($handle);
 
 echo 'Gimmy Limits! ';
-$fb = fgetc($handle);
+$fb = fgets($handle);
 
 
     for($i = 1; $i <= $fb; $i++){
